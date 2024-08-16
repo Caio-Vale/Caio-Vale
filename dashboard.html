@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styleDashboard.css">
+    <title>Gerencial Delivery</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/Logo.png" alt="Logo Pensou Chegou" id="logo">
+            <div class="usuario">
+                <div><h2>Admin</h2></div>
+            </div>
+        </nav>
+    </header>
+    <div id="container">
+        <div class="tab-buttons">
+            <button class="tab-btn active" content-id="dashboard">
+                Dashboard
+            </button>
+            <button class="tab-btn" content-id="loja">
+                Loja
+            </button>
+            <button class="tab-btn" content-id="cardapios">
+                Cardapios
+            </button>
+            <button class="tab-btn" content-id="promocao">
+                Promoções
+            </button>
+            <button class="tab-btn" content-id="pedidos">
+                Pedidos
+            </button>
+        </div>
+        <div class="tab-contents">
+            <div class="content show" id="dashboard">
+                <img src="images/undraw_control_panel_re_y3ar.svg" class="content-img" alt="deliver image">
+                <div class="infos">
+                    <h1 class="content-title">
+                        Dashboard
+                    </h1>
+
+                    <P class="content-description">Essa espaço é responsavel pela a informação de status do pedido como: pedidos novos, pedidos aceitos e pedidos que sairam para entrega, com opções de ferramentas extras para o futuro!</P>
+                </div>
+            </div>
+            <div class="content" id="loja">
+                <img src="images/undraw_cloud_files_wmo8.svg" class="content-img" alt="deliver image">
+                <div class="infos">
+                    <h1 class="content-title">
+                        Loja
+                    </h1>
+
+                    <P class="content-description">Esse espaço é responsavel pela as informações da loja, configuração de abertura fechamento automatico, divulgação do link de pedido, ajuste de banners da loja!</P>
+                </div>
+            </div>
+            <div class="content" id="cardapios">
+                <img src="images/undraw_books_re_8gea.svg" class="content-img" alt="deliver image">
+                <div class="infos">
+                    <h1 class="content-title">
+                        Cardapios
+                    </h1>
+
+                    <P class="content-description">Esse espaço é responsavel para cadastrar cardapios, produtos, categorias e adicionais, disponibilizando anexo de cadastro automatico!.</P>
+                </div>
+            </div>
+            <div class="content" id="promocao">
+                <img src="images/undraw_discount_d-4-bd.svg" class="content-img" alt="deliver image">
+                <div class="infos">
+                    <h1 class="content-title">
+                        Promoções
+                    </h1>
+
+                    <P class="content-description">Esse espaço é responsavel para criação de promoções e descontos</P>
+                </div>
+            </div>
+            <div class="content" id="pedidos">
+                <img src="images/undraw_order_delivered_re_v4ab.svg" class="content-img" alt="deliver image">
+                <div class="infos">
+                    <h1 class="content-title">
+                        Pedidos
+                    </h1>
+
+                    <P class="content-description">Essa espaço é responsavel para verificação de pedido e mudança de status do pedido! </P>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Javascript/scriptDashboard.js"></script>
+</body>
+</html>

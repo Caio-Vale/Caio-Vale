@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(46, 46, 46);
+}
+
+header {
+    margin: 3% 20%;
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    width: 500px;
+    height: 600px;
+    background-color: rgb(192, 192, 192);
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    list-style: none;
+    font-size: large;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 10% 0;
+}
+
+input {
+    height: 20px;
+    width: 200px;
+}
