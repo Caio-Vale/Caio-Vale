@@ -1,5 +1,5 @@
 
-function login() {
+function login() {// botão de enviar
     let usu = document.getElementById("usu").value;
     let senha = document.getElementById("sen").value;
 
@@ -9,3 +9,11 @@ function login() {
         alert('Incorreto, digite novamente!');
     }
 }
+
+jQuery('#sen').keypress(function(event){//botão de enviar usando "Enter"
+
+	var keycode = (event.keyCode ? event.keyCode : event.which);
+	if(keycode == '13'){
+		login();
+	}
+});
