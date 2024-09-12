@@ -54,6 +54,12 @@ nav {
     gap: 6px;
 }
 
+.cadastraProduto {
+    width: 300%;
+    height: 90%;
+    border-radius: 8px;
+}
+
 .tab-btn {
     width: 100%;
     height: 40px;
