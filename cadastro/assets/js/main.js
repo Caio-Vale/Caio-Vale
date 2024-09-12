@@ -1,50 +1,50 @@
-//VARIAVEIS RELACIONADAS AO ARQUIVO "index.html"
-const inputProduto = document.querySelector('.input-produto');//html->class="input-tarefa"
-const btnProduto = document.querySelector('.btn-produto');//html->class="btn-tarefa"
-const produtos = document.querySelector('.produtos');//html->class="tarefas"
+const inputProduto = document.querySelector('.input-produto');
+const inputValor = document.querySelector('.input-valor');
+const btnSalvar = document.querySelector('.btn-produto');
+const produtos = document.querySelector('.produtos');//lista
+const tabela = document.querySelector('.tabela'); //tabela
 
-function criaLi() {//função que cria um elemento li=linha no html
-    const li = document.createElement('li');
-    return li;
+function criaTr() {
+    const tr = document.createElement('tr')
+    return tr
 }
 
-inputProduto.addEventListener('keypress', function(e) {//evento para os botões do teclado
-    if (e.keyCode === 13) {//13 é o numero do keyCode do "Enter"
-        if (!inputProduto.value) return;//o mesmo que esta no evento de click
-        criaProduto(inputProduto.value);//o mesmo que esta no evento de click
+// function criaTd() {
+//     const td = document.createElement('td');
+//     return td;
+// }
+
+inputProduto.addEventListener('keypress', function(e) {
+    if (e.keyCode === 13) {//enter do PRODUTO
+        if (!inputProduto.value) return;
+        criaProduto(inputProduto.value, inputValor.value);
     }
 });
-  
-function limpaInput () {//função para apaga o input
-    inputProduto.value = '';//transforma o valor em uma string com um "espaço"
-    inputProduto.focus();// coloca o cusor no input que fica piscando
-}
 
-function criaBotaoApagar(li) {//função para apagar opção das tarefas
-    li.innerText += ' ';//transforma a linha em um string "espaço"
-    const botaoApagar = document.createElement('button');//criando um botão
-    botaoApagar.innerText = 'Apagar';//add o nome do botão "apagar"
-    //botaoApagar.classList.add('apagar');//pode adicionar uma class dessa forma
-    botaoApagar.setAttribute('class', 'apagar');//pode add class dessa forma também
-    botaoApagar.setAttribute('title', 'apagar essa tarefa');//add um titulo para o botão
-    li.appendChild(botaoApagar);//add um botão do "apagar" 
-}
-
-function criaProduto(textoInput) {    //cria a produto da lista
-    const li = criaLi();//aciona a função que cria um linha na  lista
-    li.innerText = textoInput;//que vai ter escrito no textoInput vai ser add no innerText
-    produtos.appendChild(li);//add o elemento "li" que é uma linha, em tarefas
-    limpaInput();//aciona a função para limpar o input informado
-    criaBotaoApagar(li);//add um botão de apagar na linha de tarefa criada
-    salvarProdutos();//função que salva a informação da lista de tarefas
-}
-
-btnProduto.addEventListener('click', function() {//ação de click do botão salvar
-    if (!inputProduto.value) return;
-    criaProduto(inputProduto.value);
+inputValor.addEventListener('keypress', function(e) {
+    if (e.keyCode === 13) {//enter do VALOR
+        if (!inputValor.value) return;
+        criaProduto(inputProduto.value, inputValor.value);
+    }
 });
 
-document.addEventListener('click', function(e) {//add um evento de click
+function limpaInput () {//função para apaga o input
+    inputProduto.value = '';
+    inputValor.value = '';
+    inputProduto.focus();
+}
+
+function criaBotaoApagar(li2) {//função para apagar opção das tarefas
+    // li.innerText += ' ';
+    li2.innerHTML += ' ';
+    const botaoApagar = document.createElement('button');
+    botaoApagar.innerText = 'Apagar';
+    botaoApagar.setAttribute('class', 'apagar');
+    botaoApagar.setAttribute('title', 'apagar essa tarefa');
+    li2.appendChild(botaoApagar);//add um botão do "apagar" 
+}
+
+document.addEventListener('click', function(e) {
     const el = e.target;//informa o que esta sendo clicado
 
     if (el.classList.contains('apagar')) {//se clicar no botão de apagar 
@@ -53,8 +53,31 @@ document.addEventListener('click', function(e) {//add um evento de click
     }
 });
 
+function criaProduto(textoInput, textoInput2) { 
+    const novoTr = criaTr();//cria uma elemento Tr, separando as linhas'
+    novoTr.innerHTML = "<td>" + textoInput + "</td>" + "<td>" + textoInput2 + "</td>";
+    
+    // const tdP = criaTd();//produto
+    // tdP.innerHTML = "<td>" + textoInput + "</td>";
+    // tabela.appendChild(tdP);
+
+    // const tdV = criaTd();//valor
+    // tdV.innerHTML = "<td>" + textoInput2 + "</td>";
+    // tabela.appendChild(tdV);
+
+    tabela.appendChild(novoTr);
+    limpaInput();
+    criaBotaoApagar(novoTr);
+    salvarProdutos();
+}
+
+btnSalvar.addEventListener('click', function() {
+    if (!inputProduto.value && !inputValor.value) return;
+    criaProduto(inputProduto.value, inputValor.value);
+});
+
 function salvarProdutos() {//função que salva a informação da lista de tarefas
-    const liProdutos = produtos.querySelectorAll('li');//selecionando todos "li"s
+    const liProdutos = tabela.querySelectorAll('tr');//selecionando todos "li"s
     const listaDeProdutos = [];//adicionando uma lista vasia
     
     for (let produto of liProdutos) {//um 'for' para adicionar essas linhas
@@ -71,12 +94,3 @@ function salvarProdutos() {//função que salva a informação da lista de taref
     //"tarefasJSON" é o elemento que vai ser recuperado
 }
 
-function adicionaTarefasSalvas() {//função para adicionar no navegador o que foi salvo
-    const tarefas = localStorage.getItem('tarefas');//obtendo a 'tarefas' que foi salva
-    const listaDeTarefas = JSON.parse(tarefas);//convertendo de volta para um array
-    
-    for (let tarefa of listaDeTarefas) {//para cada terefa informada
-        criaTarefa(tarefa);//cria a tarefa salva
-    }
-}
-adicionaTarefasSalvas();//executando a função para adicionar as tarefas

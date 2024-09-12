@@ -40,42 +40,15 @@ form input, form label, form button {
   margin-bottom: 10px;
 }
 
-form input {
-    font-size:  24px;
-    height: 50px;
-    padding: 0 20px;
+input {
+    width: 20%;
+    height: 25px;
+    border-radius: 8px;
+    border: 2px solid rgb(139, 139, 139);;
 }
 
 form input:focus {
     outline: 1px solid var(--primary-color);
-}
-
-form button {
-    border: none;
-    background: var(--primary-color);
-    color: #fff;
-    font-size: 18px;
-    font-weight: 700;
-    height: 50px;
-    cursor: pointer;
-    margin: 30px;
-}
-
-
-
-form Button:hover {
-    background: var(--primary-color-darker);
-}
-
-ul {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-li {
-    display: flex;
-    justify-content: space-between;
 }
 
 table {
@@ -116,3 +89,16 @@ td {
     
 }
 
+.apagar {
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M7.616 20q-.667 0-1.141-.475T6 18.386V6h-.5q-.213 0-.356-.144T5 5.499t.144-.356T5.5 5H9q0-.31.23-.54t.54-.23h4.46q.31 0 .54.23T15 5h3.5q.213 0 .356.144t.144.357t-.144.356T18.5 6H18v12.385q0 .666-.475 1.14t-1.14.475zM17 6H7v12.385q0 .269.173.442t.443.173h8.769q.269 0 .442-.173t.173-.442zm-6.692 11q.213 0 .357-.144t.143-.356v-8q0-.213-.144-.356T10.307 8t-.356.144t-.143.356v8q0 .213.144.356q.144.144.356.144m3.385 0q.213 0 .356-.144t.143-.356v-8q0-.213-.144-.356Q13.904 8 13.692 8q-.213 0-.357.144t-.143.356v8q0 .213.144.356t.357.144M7 6v13z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
