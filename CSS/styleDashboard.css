@@ -92,6 +92,7 @@ nav {
 }
 
 .content.show {
+    height: 50em;
     display: flex;
     gap: 14px;
     background-color: white;
@@ -104,5 +105,30 @@ nav {
     height: 800px;
 }
 
+.imgCardapio {
+    width: 50%;
+    height: 800px;
+}
 
+@media screen and (max-width:500px) and (min-width:400px){
+    
+
+    .imgCardapio {
+        display: none;
+    }
+
+    .cadastraProduto {
+        position: relative;
+        width: 180%;
+        height: 90%;
+        bottom: 7%;
+        right: 26%;
+    }
+
+    .content-img {
+        position: fixed;
+        left: 15%;
+        width: 70%;
+    }
+}   
 
