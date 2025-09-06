@@ -14,7 +14,7 @@ Sou Caio Vale, desenvolvedor FullStack junior com 3 anos de experiência em tecn
 
 Minha paixão é criar soluções inovadoras e eficientes, utilizando tecnologias como JavaScript, React, Node.js e muito mais. 🔥 Estou sempre buscando aprender e melhorar minhas habilidades, e adoro trabalhar em equipe para alcançar objetivos comuns. 🤝
 
-No meu GitHub, você encontrará alguns dos meus projetos e experimentos. Sinto-me à vontade para explorar e entrar em contato comigo se tiver alguma dúvida ou sugestão! 📝
+No meu GitHub, você encontrará alguns dos meus projetos e experimentos. Sinta-se à vontade para explorar e entrar em contato comigo se tiver alguma dúvida ou sugestão! 📝
 
 Technologies I master (Tecnologias que domino):
 
