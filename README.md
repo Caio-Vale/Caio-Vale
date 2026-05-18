@@ -1,6 +1,6 @@
 ##Hello! 👋
 
-I'm Caio Vale, a Junior FullStack developer with 3 years of experience in technology. 🚀 I'm currently finishing my FullStack course at Digital College(in Brazil) and have worked on various personal and collaborative projects. 💻
+I'm Caio Vale, a Junior FullStack developer with 5 years of experience in technology. 🚀 I'm currently finishing my FullStack course at Digital College(in Brazil) and have worked on various personal and collaborative projects. 💻
 
 My passion is creating innovative and efficient solutions using technologies like JavaScript, React, Node.js, and more. 🔥 I'm always looking to learn and improve my skills, and I love working in teams to achieve common goals. 🤝
 
@@ -10,7 +10,7 @@ On my GitHub, you'll find some of my projects and experiments. Feel free to expl
 
 ##Olá! 👋
 
-Sou Caio Vale, desenvolvedor FullStack junior com 3 anos de experiência em tecnologia. 🚀 Atualmente, estou finalizando meu curso de FullStack na Digital College e tenho trabalhado em diversos projetos pessoais e colaborativos. 💻
+Sou Caio Vale, desenvolvedor FullStack junior com 5 anos de experiência em tecnologia. 🚀 Atualmente, estou finalizando meu curso de FullStack na Digital College e tenho trabalhado em diversos projetos pessoais e colaborativos. 💻
 
 Minha paixão é criar soluções inovadoras e eficientes, utilizando tecnologias como JavaScript, React, Node.js e muito mais. 🔥 Estou sempre buscando aprender e melhorar minhas habilidades, e adoro trabalhar em equipe para alcançar objetivos comuns. 🤝
 
@@ -20,7 +20,7 @@ Technologies I master (Tecnologias que domino):
 
 - JavaScript (React, Node.js)
 - HTML/CSS
-- Database (MySQL, SQL Server)
+- Database (MySQL, SQL Server, PgAdmin)
 - Test automation with Cypress 🤖
 
 Specialties (Especialidades):
