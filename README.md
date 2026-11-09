@@ -101,10 +101,6 @@ Alguns projetos e trabalhos que representam minha trajetória no desenvolvimento
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Caio-Vale&show_icons=true&theme=transparent&hide_border=true&title_color=00B4D8&icon_color=00B4D8&text_color=C9D1D9&rank_icon=github" alt="GitHub Stats"/>
-
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Caio-Vale&layout=compact&theme=transparent&hide_border=true&title_color=00B4D8&text_color=C9D1D9&langs_count=8" alt="Top Languages"/>
-
 <br/>
 
 <img width="70%" src="https://streak-stats.demolab.com?user=Caio-Vale&theme=transparent&hide_border=true&ring=00B4D8&fire=00B4D8&currStreakLabel=00B4D8&sideLabels=C9D1D9&dates=8B949E" alt="GitHub Streak"/>
@@ -113,17 +109,7 @@ Alguns projetos e trabalhos que representam minha trajetória no desenvolvimento
 
 ---
 
-## `05. Contribution Activity`
-
-<div align="center">
-
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Caio-Vale&bg_color=050816&color=C9D1D9&line=00B4D8&point=FFFFFF&area=true&area_color=0D47A1&hide_border=true" alt="GitHub Activity Graph"/>
-
-</div>
-
----
-
-## `06. GitHub Trophies`
+## `07. GitHub Trophies`
 
 <div align="center">
 
@@ -133,7 +119,7 @@ Alguns projetos e trabalhos que representam minha trajetória no desenvolvimento
 
 ---
 
-## `07. Contribution Snake`
+## `08. Contribution Snake`
 
 <div align="center">
 
@@ -145,7 +131,7 @@ Alguns projetos e trabalhos que representam minha trajetória no desenvolvimento
 
 ---
 
-## `08. Vamos nos conectar?`
+## `09. Vamos nos conectar?`
 
 Estou sempre aberto a trocar experiências, compartilhar conhecimento e conversar sobre tecnologia, desenvolvimento e novas ideias.
 
