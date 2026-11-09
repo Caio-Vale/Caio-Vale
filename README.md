@@ -109,7 +109,7 @@ Alguns projetos e trabalhos que representam minha trajetória no desenvolvimento
 
 ---
 
-## `07. GitHub Trophies`
+## `05. GitHub Trophies`
 
 <div align="center">
 
@@ -119,7 +119,7 @@ Alguns projetos e trabalhos que representam minha trajetória no desenvolvimento
 
 ---
 
-## `08. Contribution Snake`
+## `06. Contribution Snake`
 
 <div align="center">
 
@@ -131,7 +131,7 @@ Alguns projetos e trabalhos que representam minha trajetória no desenvolvimento
 
 ---
 
-## `09. Vamos nos conectar?`
+## `07. Vamos nos conectar?`
 
 Estou sempre aberto a trocar experiências, compartilhar conhecimento e conversar sobre tecnologia, desenvolvimento e novas ideias.
 
